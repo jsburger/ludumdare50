@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-friction = .4
-
-carrying = noone
-throwDir = direction
+if (instance_exists(carrier)) {
+	x = carrier.x
+	y = carrier.y + carryOffset
+}
