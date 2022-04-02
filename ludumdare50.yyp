@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sotrue","path":"scripts/sotrue/sotrue.yy",},"order":2,},
     {"id":{"name":"playerMovement","path":"scripts/playerMovement/playerMovement.yy",},"order":1,},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
     {"id":{"name":"getInput","path":"scripts/getInput/getInput.yy",},"order":0,},
