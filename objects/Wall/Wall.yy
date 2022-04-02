@@ -1,14 +1,11 @@
 {
   "spriteId": {
-    "name": "sprPlayerIdle",
-    "path": "sprites/sprPlayerIdle/sprPlayerIdle.yy",
+    "name": "mskWall",
+    "path": "sprites/mskWall/mskWall.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
-  "spriteMaskId": {
-    "name": "mskPlayer",
-    "path": "sprites/mskPlayer/mskPlayer.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
@@ -24,7 +21,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -34,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Player",
+  "name": "Wall",
   "tags": [],
   "resourceType": "GMObject",
 }

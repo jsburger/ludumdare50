@@ -7,8 +7,8 @@ function playerMovement(){
 		left = button_check(inputs.left),
 		right = button_check(inputs.right);
 
-	var playerSpeed = 3,
-		playerAcceleration = .4;
+	var playerSpeed = 4,
+		playerAcceleration = friction + .45;
 
 	var vChange = 0,
 		hChange = 0;
