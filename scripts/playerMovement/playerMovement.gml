@@ -1,0 +1,35 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function playerMovement(){
+
+	var up = getInput(inputs.up, inputTypes.check),
+		down = getInput(inputs.down, inputTypes.check),
+		left = getInput(inputs.left, inputTypes.check),
+		right = getInput(inputs.right, inputTypes.check);
+
+	var playerSpeed = 3,
+		playerAcceleration = .4;
+
+	var vChange = 0,
+		hChange = 0;
+	
+	if (up && !down) {
+		vChange -= playerAcceleration
+	}
+	else if (down && !up) {
+		vChange += playerAcceleration
+	}
+	if (left && !right) {
+		hChange -= playerAcceleration
+	}
+	else if (right && !left) {
+		hChange += playerAcceleration
+	}
+
+	var magnitude = clamp(sqrt(vChange * vChange + hChange * hChange), 0, playerAcceleration),
+		dir = point_direction(0, 0, hChange, vChange);
+
+	motion_add(dir, magnitude)
+	speed = min(playerSpeed, abs(speed)) * sign(speed)
+
+}
