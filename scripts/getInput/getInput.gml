@@ -1,5 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function button_pressed(inputName) {
+	return getInput(inputName, inputTypes.pressed);
+}
+
+function button_check(inputName) {
+	return getInput(inputName, inputTypes.check);
+}
+
+function button_released(inputName) {
+	return getInput(inputName, inputTypes.released);
+}
+
 function getInput(inputName, inputType) {
 	var keys = [];
 	switch (inputName) {
