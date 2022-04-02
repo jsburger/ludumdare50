@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"order":1,},
+    {"id":{"name":"sprTrash1","path":"sprites/sprTrash1/sprTrash1.yy",},"order":1,},
     {"id":{"name":"playerMovement","path":"scripts/playerMovement/playerMovement.yy",},"order":1,},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},"order":0,},
     {"id":{"name":"getInput","path":"scripts/getInput/getInput.yy",},"order":0,},
