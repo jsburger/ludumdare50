@@ -2,10 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function playerMovement(){
 
-	var up = getInput(inputs.up, inputTypes.check),
-		down = getInput(inputs.down, inputTypes.check),
-		left = getInput(inputs.left, inputTypes.check),
-		right = getInput(inputs.right, inputTypes.check);
+	var up = button_check(inputs.up),
+		down = button_check(inputs.down),
+		left = button_check(inputs.left),
+		right = button_check(inputs.right);
 
 	var playerSpeed = 3,
 		playerAcceleration = .4;
