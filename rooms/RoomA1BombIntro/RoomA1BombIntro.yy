@@ -175,8 +175,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Area1",
-    "path": "folders/Rooms/MapRooms/Area1.yy",
+    "name": "Area 1",
+    "path": "folders/Rooms/MapRooms/Area 1.yy",
   },
   "resourceVersion": "1.0",
   "name": "RoomA1BombIntro",
