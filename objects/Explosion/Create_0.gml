@@ -10,3 +10,5 @@ repeat(12){
 		motion_add(random(360), random_range(3, 6));
 	}
 }
+
+instance_create_depth(x, y, depth + 10, ScorchMark);
