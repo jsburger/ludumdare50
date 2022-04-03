@@ -23,7 +23,9 @@ if (z > 0 && !instance_exists(carrier)) {
 		z = 0
 		zSpeed = 0
 		friction = groundFriction
-		instance_create_depth(x, y, depthBase + 1, DustBottom)
-		sound_play(sndScrapThud)
+		if (!place_meeting(x, y, Hole)) {
+			instance_create_depth(x, y, depthBase + 1, DustBottom)
+			sound_play(sndScrapThud)
+		}
 	}
 }
