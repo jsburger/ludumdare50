@@ -2,6 +2,6 @@
 // You can write your code in this editor
 
 targets = [];
-depth -= 1;
+depth += 1;
 
 depressed = false

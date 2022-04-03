@@ -152,10 +152,10 @@
     "persistent": true,
   },
   "viewSettings": {
-    "inheritViewSettings": true,
+    "inheritViewSettings": false,
     "enableViews": false,
     "clearViewBackground": false,
-    "clearDisplayBuffer": false,
+    "clearDisplayBuffer": true,
   },
   "physicsSettings": {
     "inheritPhysicsSettings": true,

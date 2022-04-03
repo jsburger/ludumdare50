@@ -9,5 +9,6 @@ if (!instance_exists(carrier) && speed != 0) {
 
 if (instance_exists(carrier)) {
 	x = carrier.x
-	y = carrier.y + carryOffset
+	y = carrier.y
+	z = -carryOffset
 }

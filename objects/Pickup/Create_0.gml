@@ -4,6 +4,7 @@
 groundFriction = 1
 airFriction = .09
 friction = groundFriction
+depth -= 2
 
 //Goes over obstacles, LowThrow doesn't
 collisionType = COLLISIONS.HIGH
@@ -11,7 +12,6 @@ collisionType = COLLISIONS.HIGH
 on_throw = function (thrower) {
 	carrier = noone
 	z = -carryOffset
-	y -= carryOffset
 	zSpeed = 10
 	friction = airFriction
 }

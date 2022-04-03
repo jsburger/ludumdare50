@@ -1,3 +1,4 @@
-/// @description Randomize spriteimage_speed = 0;
+/// @description Randomize sprite
+event_inherited()
 active = true;
 image_speed = 0

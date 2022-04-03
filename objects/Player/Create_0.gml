@@ -4,6 +4,7 @@
 event_inherited()
 
 depth += 1
+depthBase = depth - 1
 
 friction = .4;
 maxSpeed = 4
