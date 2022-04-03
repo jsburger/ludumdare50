@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprToggleWallLower",
-    "path": "sprites/sprToggleWallLower/sprToggleWallLower.yy",
+    "name": "sprToggleWallA",
+    "path": "sprites/sprToggleWallA/sprToggleWallA.yy",
   },
   "solid": false,
   "visible": true,
