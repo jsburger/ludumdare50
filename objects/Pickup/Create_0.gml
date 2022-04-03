@@ -5,16 +5,22 @@ groundFriction = 1
 airFriction = .09
 friction = groundFriction
 
+//Goes over obstacles, LowThrow doesn't
+collisionType = COLLISIONS.HIGH
+
 on_throw = function (thrower) {
 	carrier = noone
 	z = -carryOffset
 	y -= carryOffset
-	zspeed = 10
+	zSpeed = 10
 	friction = airFriction
 }
 
 carrier = noone
-carryOffset = -24
+carryOffset = -18
 
 z = 0
-zspeed = 0
+zSpeed = 0
+zChange = -.9
+
+squishProgress = 1

@@ -1,39 +1,52 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function doWallCollision() {
+function doWallCollision(type=COLLISIONS.LOW) {
 	var tilemap = layer_tilemap_get_id("Collision");
 
+	var check;
+	//Low collisions: Walls, Rock walls, Fences
+	if (type == COLLISIONS.LOW) {
+		check = function (tilemap, x, y) {
+			return tilemap_get_at_pixel(tilemap, x, y) || position_meeting(x, y, ColliderObject)
+		}
+	}
+	//High Collisions: Walls only
+	else {
+		check = function (tilemap, x, y) {
+			return tilemap_get_at_pixel(tilemap, x, y) == 1
+		}
+	}
 	#macro TileWidth 32
 
 	if (hspeed < 0) {
 		for (var i = bbox_top; true; i += TileWidth) {
-			var yCheck = clamp(i, bbox_top, bbox_bottom),
+			var yCheck = clamp(i, bbox_top + 1, bbox_bottom - 1),
 				xCheck = bbox_left + hspeed;
-			if (tilemap_get_at_pixel(tilemap, xCheck, yCheck)) {
+			if (check(tilemap, xCheck, yCheck)) {
 				x += ((xCheck div TileWidth) + 1) * TileWidth  - bbox_left
 				hspeed = 0
 				break
 			}
-			if i <= bbox_bottom break
+			if i >= bbox_bottom - 1 break
 		}
 	}
 	else if (hspeed > 0) {
 		for (var i = bbox_top; true; i += TileWidth) {
-			var yCheck = clamp(i, bbox_top, bbox_bottom),
+			var yCheck = clamp(i, bbox_top + 1, bbox_bottom - 1),
 				xCheck = bbox_right + hspeed;
-			if (tilemap_get_at_pixel(tilemap, xCheck, yCheck)) {
+			if (check(tilemap, xCheck, yCheck)) {
 				x += ((xCheck div TileWidth)) * TileWidth - bbox_right
 				hspeed = 0
 				break
 			}
-			if i <= bbox_bottom break
+			if i >= bbox_bottom - 1 break
 		}
 	}
 	if (vspeed < 0) {
 		for (var i = bbox_left + 1; true; i += TileWidth) {
 			var xCheck = clamp(i, bbox_left + 1, bbox_right - 1),
 				yCheck = bbox_top + vspeed;
-			if (tilemap_get_at_pixel(tilemap, xCheck, yCheck)) {
+			if (check(tilemap, xCheck, yCheck)) {
 				y += ((yCheck div TileWidth) + 1) * TileWidth - bbox_top
 				vspeed = 0
 				break
@@ -45,7 +58,7 @@ function doWallCollision() {
 		for (var i = bbox_left + 1; true; i += TileWidth) {
 			var xCheck = clamp(i, bbox_left + 1, bbox_right - 1),
 				yCheck = bbox_bottom + vspeed;
-			if (tilemap_get_at_pixel(tilemap, xCheck, yCheck)) {
+			if (check(tilemap, xCheck, yCheck)) {
 				y += ((yCheck div TileWidth)) * TileWidth - bbox_bottom
 				vspeed = 0
 				break
@@ -53,4 +66,9 @@ function doWallCollision() {
 			if i >= bbox_right - 1 break
 		}
 	}
+}
+
+enum COLLISIONS {
+	HIGH,
+	LOW
 }
