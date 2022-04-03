@@ -4,6 +4,7 @@ var destX = 0,
 	destY = 0,
 	found = false;
 with RoomTransition {
+	active = false
 	if (destination == other.lastRoom) {
 		destX = x
 		destY = y

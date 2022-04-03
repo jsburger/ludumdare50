@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "sprDustL",
-    "path": "sprites/sprDustL/sprDustL.yy",
+    "name": "sprTrash1",
+    "path": "sprites/sprTrash1/sprTrash1.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "DeletedEffect",
-    "path": "objects/DeletedEffect/DeletedEffect.yy",
+    "name": "Pickup",
+    "path": "objects/Pickup/Pickup.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,17 +24,16 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"Hole","path":"objects/Hole/Hole.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects",
-    "path": "folders/Objects/Effects.yy",
+    "name": "Pickups",
+    "path": "folders/Objects/Pickups.yy",
   },
   "resourceVersion": "1.0",
-  "name": "DustTop",
+  "name": "ScrapPickup",
   "tags": [],
   "resourceType": "GMObject",
 }

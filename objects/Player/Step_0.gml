@@ -16,7 +16,8 @@ if (speed > 0) {
 	
 	if dustTime >= 30 {
 		repeat(random_range(3, 6)) {
-			with instance_create_depth(x, bbox_bottom, depth - sign(dsin(direction)), SmallDust) {
+			with instance_create_depth(x, bbox_bottom, depth + 1, SmallDust) {
+				depthBase = other.depthBase + 1
 				motion_set(other.direction + 180, random_range(1, 2.6))
 			}
 		}
@@ -27,7 +28,8 @@ if (speed > 0) {
 	
 	var dustChance = dustTime > 0 ? 20 : 10;
 	if random(100) <= dustChance {
-		with instance_create_depth(x, bbox_bottom, depth - sign(dsin(direction)), SmallDust) {
+		with instance_create_depth(x, bbox_bottom, depth + 1, SmallDust) {
+			depthBase = other.depthBase + 1
 			motion_set(other.direction + 180, random_range(.6, 2))
 		}
 	}
@@ -59,7 +61,6 @@ if !(instance_exists(carrying)) {
 else {
 	if button_pressed(inputs.use) {
 		with carrying {
-			y += 10
 			motion_set(other.throwDir, 8)
 			on_throw(other)
 		}

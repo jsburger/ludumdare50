@@ -13,7 +13,7 @@ if squishProgress < 1 {
 }
 
 //Arcing
-if (z > 0) {
+if (z > 0 && !instance_exists(carrier)) {
 	zSpeed += zChange
 	z += zSpeed
 	//Landing
@@ -23,7 +23,7 @@ if (z > 0) {
 		z = 0
 		zSpeed = 0
 		friction = groundFriction
-		instance_create_depth(x, y, depth + 1, DustBottom)
+		instance_create_depth(x, y, depthBase + 1, DustBottom)
 		sound_play(sndScrapThud)
 	}
 }

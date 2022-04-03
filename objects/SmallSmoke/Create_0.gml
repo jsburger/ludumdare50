@@ -1,4 +1,5 @@
 /// @description Set Rotation Speed and Size
+event_inherited()
 
 friction = .2
 rotation = random_range(-1.5, 2)
