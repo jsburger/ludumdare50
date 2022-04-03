@@ -10,7 +10,10 @@
     "path": "sprites/mskPlayer/mskPlayer.yy",
   },
   "persistent": true,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "hitme",
+    "path": "objects/hitme/hitme.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Hitmes",
+    "path": "folders/Objects/Hitmes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Player",

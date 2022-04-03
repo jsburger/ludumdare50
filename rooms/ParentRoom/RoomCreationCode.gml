@@ -1,0 +1,1 @@
+if (!instance_exists(GameCont)) instance_create_layer(0, 0, "Instances", GameCont);
