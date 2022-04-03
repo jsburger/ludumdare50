@@ -1,5 +1,9 @@
 /// @description PLAYER HUD
 
+draw_set_color(c_black)
+draw_rectangle(0, 0, camera_get_view_width(view_camera[0]), 160, false)
+draw_set_color(c_white)
+
 if (!instance_exists(Player)){exit}
 var t = Player;
 
