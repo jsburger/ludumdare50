@@ -3,3 +3,5 @@
 
 targets = [];
 depth -= 1;
+
+depressed = false

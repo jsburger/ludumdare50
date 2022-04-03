@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"Player","path":"objects/Player/Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":320.0,"resourceVersion":"1.0","name":"inst_6F59D863","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":448.0,"y":352.0,"resourceVersion":"1.0","name":"inst_552367D6","tags":[],"resourceType":"GMRInstance",},
         {"properties":[
             {"propertyId":{"name":"destination","path":"objects/RoomTransition/RoomTransition.yy",},"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"value":"TransitionTest","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -110,7 +109,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_6F59D863","path":"rooms/RoomTest/RoomTest.yy",},
     {"name":"inst_552367D6","path":"rooms/RoomTest/RoomTest.yy",},
     {"name":"inst_44453532","path":"rooms/RoomTest/RoomTest.yy",},
     {"name":"inst_7E9BB0B7","path":"rooms/RoomTest/RoomTest.yy",},
