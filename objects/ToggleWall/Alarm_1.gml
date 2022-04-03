@@ -2,7 +2,8 @@
 
 image_index = 0
 image_speed = 1
-sprite_index = spr_up
+sprite_index = spr_down
 mask_index = -1
 active = true
+depthBase -= 3;
 alarm[1] = -1

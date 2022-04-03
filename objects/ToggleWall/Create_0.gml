@@ -18,3 +18,4 @@ switch irandom(2) {
 		spr_down = sprToggleWallCReverse;
 		break;
 }
+sprite_index = spr_up;
