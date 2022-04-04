@@ -291,8 +291,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Area 3",
-    "path": "folders/Rooms/MapRooms/Area 3.yy",
+    "name": "Area 2",
+    "path": "folders/Rooms/MapRooms/Area 2.yy",
   },
   "resourceVersion": "1.0",
   "name": "RoomA3Bomberman",
