@@ -39,7 +39,7 @@ if (z > 0 && !instance_exists(carrier)) {
 		}
 		else {
 			instance_create_depth(x, y, depthBase + 1, DustBottom)
-			sound_play(sndScrapThud)
+			sound_play(choose(sndScrapThud1, sndScrapThud2))
 		}
 	}
 }

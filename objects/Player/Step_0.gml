@@ -50,7 +50,7 @@ if !(instance_exists(carrying)) {
 			if button_pressed(inputs.use) {
 				canUse = false
 				picking = true
-				sound_play(choose(sndPickup1, sndPickup2))
+				sound_play(choose(sndPickup1, sndPickup2, sndPickup3))
 				carrying = n
 				n.carrier = self
 				n.z = 0
@@ -108,7 +108,7 @@ if !(instance_exists(carrying)) {
 				canUse = false
 				tilemap_set_at_pixel(tilemap, TILETYPE.PIT, boardCheckX, boardCheckY)
 				with instance_create_layer(x, y, "Instances", Board) {
-					sound_play(choose(sndPickup1, sndPickup2))
+					sound_play(choose(sndPickup1, sndPickup2, sndPickup3))
 					other.carrying = self
 					carrier = other
 					z = 0

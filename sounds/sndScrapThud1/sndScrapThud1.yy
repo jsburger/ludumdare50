@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.8,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndPickup2.ogg",
-  "duration": 0.396077,
+  "soundFile": "sndScrapThud1.ogg",
+  "duration": 1.135271,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndPickup2",
+  "name": "sndScrapThud1",
   "tags": [],
   "resourceType": "GMSound",
 }
