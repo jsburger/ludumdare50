@@ -1,0 +1,1 @@
+destination = RoomA1Crossroads;

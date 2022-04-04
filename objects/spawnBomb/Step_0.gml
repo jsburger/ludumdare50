@@ -3,6 +3,7 @@
 if active = true && !instance_exists(created){
 
 	created = instance_create_depth(x, y, depthBase, Bomb);
+	instance_create_depth(x, y, depthBase + 1, DustBottom);
 	active = false;
 }
 
