@@ -9,3 +9,10 @@ textIndex = 0
 textProgress = -1
 
 global.scrapCollected = 0
+
+draw_set_font(fGame);
+
+global.hasNPCPintendo  = false;
+global.hasNPCRoboBlor  = false;
+global.hasNPCTrimblina = false;
+global.hasNPCComedybot = false;
