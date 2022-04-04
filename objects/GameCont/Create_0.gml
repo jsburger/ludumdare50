@@ -4,4 +4,8 @@
 time = 0;
 maxtime = room_speed * 60 * 5; // 5 mins
 
+textArray = [];
+textIndex = 0
+textProgress = -1
+
 global.scrapCollected = 0

@@ -2,6 +2,10 @@
 
 time = min(++time, maxtime);
 
+if textProgress != -1 {
+	textProgress++
+}
+
 with all if object_index != GameCont && visible {
 	var depthBaseCheck = variable_instance_get(self, "depthBase");
 	if depthBaseCheck == undefined {

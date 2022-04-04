@@ -39,14 +39,16 @@ else {
 	audio_stop_sound(walkSound)
 }
 
+var canUse = true;
 
 //Pick up objects
 if !(instance_exists(carrying)) {
 	var picking = false
-	if instance_exists(Pickup) {
+	if instance_exists(Pickup) && canUse {
 		var n = instance_nearest(x, y, Pickup);
-		if distance_to_object(n) <= 4 {
+		if distance_to_object(n) <= 4 && n.z <= 12{
 			if button_pressed(inputs.use) {
+				canUse = false
 				picking = true
 				sound_play(choose(sndPickup1, sndPickup2))
 				carrying = n
@@ -57,7 +59,7 @@ if !(instance_exists(carrying)) {
 		}
 	}
 	//Pick up Boards
-	if !picking {
+	if !picking && canUse {
 		var tilemap = layer_tilemap_get_id("Collision"),
 			boardCheckX = x + lengthdir_x(20, throwDir),
 			boardCheckY = (bbox_top + bbox_bottom)/2 + lengthdir_y(20, throwDir);
@@ -103,6 +105,7 @@ if !(instance_exists(carrying)) {
 			}
 			
 			if button_pressed(inputs.use) && passed {
+				canUse = false
 				tilemap_set_at_pixel(tilemap, TILETYPE.PIT, boardCheckX, boardCheckY)
 				with instance_create_layer(x, y, "Instances", Board) {
 					sound_play(choose(sndPickup1, sndPickup2))
@@ -119,10 +122,9 @@ if !(instance_exists(carrying)) {
 	}
 }
 
-
 //Throw Objects
 else {
-	if button_pressed(inputs.use) {
+	if button_pressed(inputs.use) && canUse {
 		var cancel = false
 		//Place Boards
 		if (carrying.object_index == Board) {
@@ -130,7 +132,8 @@ else {
 				boardCheckX = x + lengthdir_x(20, throwDir),
 				boardCheckY = (bbox_top + bbox_bottom)/2 + lengthdir_y(20, throwDir);
 
-			if (tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.PIT) && canPlaceBoard(tilemap, boardCheckX, boardCheckY){
+			if (tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.PIT) && canPlaceBoard(tilemap, boardCheckX, boardCheckY) {
+				canUse = false
 				with carrying instance_destroy()
 				tilemap_set_at_pixel(tilemap, TILETYPE.BOARDS, boardCheckX, boardCheckY)
 				instance_create_depth(boardCheckX - boardCheckX mod TileWidth, boardCheckY - boardCheckY mod TileWidth, depthBase + 30, BoardPlaced)
@@ -139,7 +142,8 @@ else {
 				cancel = tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.PIT
 			}
 		}
-		if !cancel {
+		if !cancel && canUse {
+			canUse = false
 			with carrying {
 				motion_set(other.throwDir, 8)
 				on_throw(other)
@@ -151,6 +155,24 @@ else {
 		}
 	}
 }
+//Advance Text
+if (canUse && instance_exists(GameCont) && GameCont.textProgress != -1) {
+	if button_pressed(inputs.use) {
+		canUse = false
+		advanceTextPrompt()
+	}
+}
+//Use Interactables
+if (canUse && instance_exists(Interactable) && distance_to_object(Interactable) <= 4) {
+	if button_pressed(inputs.use) {
+		canUse = false
+		with instance_nearest(x, y, Interactable) {
+			alarm[0] = 1
+		}
+	}
+}
+
+
 //Set Sprites
 if !(throwing) {
 	setPlayerSprites()
