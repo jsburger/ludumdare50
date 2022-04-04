@@ -14,6 +14,7 @@ function button_released(inputName) {
 
 function getInput(inputName, inputType) {
 	var keys = [];
+	var mb = false;
 	switch (inputName) {
 		case (inputs.use):
 			keys = ["E", vk_enter, vk_space]
@@ -30,17 +31,27 @@ function getInput(inputName, inputType) {
 		case (inputs.left):
 			keys = ["A", vk_left]
 			break
+		
+		case (inputs.menu_use):
+			keys = [mb_left]; mb = true;
+			break
+		case (inputs.menu_cancel):
+			keys = [mb_right]; mb = true;
+			break
+		case (inputs.menu_select):
+			keys = [mb_middle]; mb = true;
+			break
 	}
 	var func;
 	switch(inputType) {
 		case(inputTypes.pressed):
-			func = keyboard_check_pressed
+			func = (mb ? mouse_check_button_pressed : keyboard_check_pressed);
 			break
 		case(inputTypes.check):
-			func = keyboard_check
+			func = (mb ? mouse_check_button : keyboard_check);
 			break
 		case(inputTypes.released):
-			func = keyboard_check_released
+			func = (mb ? mouse_check_button_released : keyboard_check_released);
 			break
 	}
 	for (var i = 0; i < array_length(keys); i++) {
@@ -59,11 +70,14 @@ enum inputs {
 	down,
 	left,
 	right,
-	use
+	use,
+	menu_use,
+	menu_cancel,
+	menu_select,
 }
 
 enum inputTypes {
 	pressed,
 	check,
-	released
+	released,
 }
