@@ -1,9 +1,60 @@
 /// @description Increment time, depth sorting
-
 time = min(++time, maxtime);
 
 if textProgress != -1 {
 	textProgress++
+}
+
+if global.scrapCollected >= global.scrapRequired && fade = -1{
+	fadingOut = false
+	fade = 0
+}
+
+if time == maxtime && hasSentPrompt == false && fade = -1{
+	fade = 0
+	fadingOut = false
+	timeUp = true
+}
+
+if fade >= 0 {
+	if fadingOut == true{
+		fade -= .005
+		if fade <= 0 {
+			fade = -1
+		}
+	}
+	else {
+		fade += .01
+		if fade >= 1 {
+			if timeUp {
+				if hasSentPrompt = false {
+					setTextPrompt(["YOU ARE MY FINAL SUBJECT.", "THE DAY IS UP.", "RETURN TO THE PIT AT ONCE."])
+					hasSentPrompt = true
+				}
+			}
+			else {
+				timerResetting = true
+			}
+			fade = 1
+		}
+	}
+	
+	if fade == 1 && timeUp {
+		if textProgress == -1 {
+			fadingOut = true
+		}
+	}
+	
+	if timerResetting {
+		time -= 10
+		if time <= 0 {
+			time = 0
+			timerResetting = false
+			fadingOut = true
+			global.day++
+			global.scrapCollected = 0
+		}
+	}
 }
 
 with all if object_index != GameCont && visible {

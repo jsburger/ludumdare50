@@ -9,7 +9,7 @@ if steamAttackProgress <= 10 {
 		}
 	}
 	steamAttackOffset += 10 + random(20)
-	alarm[1] = 15
+	alarm[1] = 20
 }
 else {
 	attackCycle = 1

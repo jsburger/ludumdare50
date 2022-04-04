@@ -5,5 +5,8 @@ if active {
 		lastRoom = room
 	}
 	active = false
-	room_goto(destination)
+	if !GameCont.timeUp {
+		room_goto(destination)
+	}
+	else room_goto(BossRoom)
 }

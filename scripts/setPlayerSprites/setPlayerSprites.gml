@@ -5,7 +5,16 @@ function setPlayerSprites(){
 		is_walking = abs(speed) > 0,
 		left = sign(dcos(throwDir)) == -1,
 		is_throwing = throwing == true;
-		
+	
+	if hurtFrames > 0 {
+		var s = left ? sprPlayerHurtLeft : sprPlayerHurtLeft;
+		if sprite_index != s {
+			image_index = 0
+		}
+		sprite_index = s
+		exit
+	}
+	
 	if is_throwing {
 		sprite_index = left ? sprPlayerThrowLeft : sprPlayerThrowRight
 		image_index = 0

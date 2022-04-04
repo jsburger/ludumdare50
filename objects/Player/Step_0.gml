@@ -1,6 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (my_health <= 0) {
+	dead = true
+}
+
+if dead {
+	deadTime++
+	if deadTime == 10 {
+		instance_create_depth(0, 0, 0, FadeToGameOverScreen)
+		instance_create_layer(x, y , "Instances", Explosion)
+		audio_stop_sound(walkSound)
+		instance_destroy()
+	}
+	exit
+}
+
 if !(throwing) {
 	playerMovement()
 }

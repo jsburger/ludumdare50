@@ -20,3 +20,4 @@ if found {
 	}
 	instance_destroy()
 }
+if room = BossRoom instance_destroy()

@@ -18,3 +18,6 @@ throwing = false
 
 walkSound = sndPlayerMove
 dustTime = 0
+
+dead = false
+deadTime = 0

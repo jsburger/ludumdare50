@@ -26,7 +26,7 @@ if (z > 0 && !instance_exists(carrier)) {
 		friction = groundFriction
 		var hole = place_meeting(x, y, Hole);
 		if hole || getTileAt(x, y) == TILETYPE.PIT {
-			if (object_index != ScrapPickup || !hole) {
+			if ((object_index != ScrapPickup && object_index != ComdeyPickup) || !hole) {
 				with instance_create_depth(x, y, depthBase, PitFall) {
 					sprite_index = other.sprite_index
 					owner = other

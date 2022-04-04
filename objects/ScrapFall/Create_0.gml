@@ -5,3 +5,5 @@ timer = 0
 
 goalX = x
 goalY = y
+
+comedy = false
