@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndPickup1.ogg",
-  "duration": 0.41585,
+  "duration": 0.396077,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

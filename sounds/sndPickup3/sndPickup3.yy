@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndThrow2.ogg",
-  "duration": 0.430703,
+  "soundFile": "sndPickup3.ogg",
+  "duration": 0.396077,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndThrow2",
+  "name": "sndPickup3",
   "tags": [],
   "resourceType": "GMSound",
 }
