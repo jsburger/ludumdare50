@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.85,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndBossFlamethrowerLoop.ogg",
-  "duration": 4.000042,
+  "soundFile": "sndBossFireScrap.ogg",
+  "duration": 2.284708,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndBossFlamethrowerLoop",
+  "name": "sndBossFireScrap",
   "tags": [],
   "resourceType": "GMSound",
 }
