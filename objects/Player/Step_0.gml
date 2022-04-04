@@ -56,8 +56,8 @@ if !(instance_exists(carrying)) {
 			}
 		}
 	}
+	//Pick up Boards
 	if !picking {
-		//Pick up Boards
 		var tilemap = layer_tilemap_get_id("Collision"),
 			boardCheckX = x + lengthdir_x(20, throwDir),
 			boardCheckY = (bbox_top + bbox_bottom)/2 + lengthdir_y(20, throwDir);
@@ -97,7 +97,11 @@ if !(instance_exists(carrying)) {
 					c++
 				}
 			}
-				
+			
+			if passed with instance_nearest(boardCheckX - boardCheckX mod TileWidth, boardCheckY - boardCheckY mod TileWidth, BoardPlaced) {
+				sprite_index = sprBoardsYellow
+			}
+			
 			if button_pressed(inputs.use) && passed {
 				tilemap_set_at_pixel(tilemap, TILETYPE.PIT, boardCheckX, boardCheckY)
 				with instance_create_layer(x, y, "Instances", Board) {
@@ -132,7 +136,7 @@ else {
 				instance_create_depth(boardCheckX - boardCheckX mod TileWidth, boardCheckY - boardCheckY mod TileWidth, depthBase + 30, BoardPlaced)
 			}
 			else {
-				cancel = true
+				cancel = tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.PIT
 			}
 		}
 		if !cancel {

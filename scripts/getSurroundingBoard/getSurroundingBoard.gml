@@ -1,13 +1,14 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function canPlaceBoard(tileset, x, y) {
-	var xoff, yoff, foundStraight = false;
+	var xoff, yoff, foundStraight = false, boardCount = 0;
 	for (var i = 0; i <= 3; i++) {
 		xoff = lengthdir_x(TileWidth, 90 * i)
 		yoff = lengthdir_y(TileWidth, 90 * i)
 
 		var tile = tilemap_get_at_pixel(tileset, x + xoff, y + yoff);
 		if tile == TILETYPE.BOARDS {
+			boardCount++
 			//Check perpendicular tiles for boards
 			if (tilemap_get_at_pixel(tileset, x - yoff + xoff, y - xoff + yoff) != TILETYPE.BOARDS && tilemap_get_at_pixel(tileset, x + yoff + xoff, y + xoff + yoff)) {
 				foundStraight = true
@@ -26,7 +27,7 @@ function canPlaceBoard(tileset, x, y) {
 			c++
 		}
 	}
-	return isBoardSupported(tileset, x, y)
+	return boardCount == 0 && isBoardSupported(tileset, x, y)
 }
 
 function isBoardSupported(tileset, x, y) {
