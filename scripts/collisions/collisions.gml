@@ -76,6 +76,11 @@ function doWallCollision(type=COLLISIONS.LOW) {
 	}
 }
 
+function getTileAt (x, y) {
+	var tilemap = layer_tilemap_get_id("Collision");
+	return tilemap_get_at_pixel(tilemap, x, y)
+}
+
 enum COLLISIONS {
 	HIGH,
 	LOW,
