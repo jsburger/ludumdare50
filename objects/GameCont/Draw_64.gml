@@ -29,5 +29,16 @@ for(var i = 0; i < t.maxhealth; i++){
 }
 
 // Time drawing:
-draw_sprite(sprTimeHUDBar, 0, room_width / 2, 64);
-draw_sprite_part(sprTimeHUDBar, 1, 0, 0, sprite_get_width(sprTimeHUDBar) * time / maxtime, sprite_get_height(sprTimeHUDBar), room_width / 2 - sprite_get_width(sprTimeHUDBar) / 2, 64 - sprite_get_height(sprTimeHUDBar) / 2);
+//draw_sprite(sprTimeHUDBar, 0, room_width / 2, 64);
+//draw_sprite_part(sprTimeHUDBar, 1, 0, 0, sprite_get_width(sprTimeHUDBar) * time / maxtime, sprite_get_height(sprTimeHUDBar), room_width / 2 - sprite_get_width(sprTimeHUDBar) / 2, 64 - sprite_get_height(sprTimeHUDBar) / 2);
+
+var width = room_width - 100,
+	xCenter = room_width/2,
+	yCenter = 180;
+draw_line_width_color(xCenter - width/2, yCenter, xCenter + width/2, yCenter, 27, c_black, c_black)
+draw_line_width_color(xCenter - width/2, yCenter, xCenter - width/2 + width * time/maxtime, yCenter, 25, c_red, c_red)
+//Left side
+draw_sprite_ext(sprTimeBarEnd, 0, xCenter - width/2, yCenter, -1, 1, 0, c_white, 1)
+//Right side
+draw_sprite_ext(sprTimeBarEnd, 0, xCenter + width/2, yCenter, 1, 1, 0, c_black, 1)
+draw_sprite(sprTimeBarSun, -1, xCenter - width/2 + width * time/maxtime, yCenter)
