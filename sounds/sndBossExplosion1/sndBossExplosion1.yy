@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.29,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndScrapThud_old.ogg",
-  "duration": 0.874218,
+  "soundFile": "sndBossExplosion1.ogg",
+  "duration": 1.820604,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndScrapThud_old",
+  "name": "sndBossExplosion1",
   "tags": [],
   "resourceType": "GMSound",
 }
