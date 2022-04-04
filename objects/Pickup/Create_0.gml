@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+team = 1;
+damage = 1;
 
 groundFriction = 1
 airFriction = .09

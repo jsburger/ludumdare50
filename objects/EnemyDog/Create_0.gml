@@ -12,5 +12,8 @@ maxspeed = 2.5;
 minspeed = 0;
 damage = 1;
 
+maxhealth = 2;
+my_health = maxhealth;
+
 alarm[0] = 60;
 friction = .5;

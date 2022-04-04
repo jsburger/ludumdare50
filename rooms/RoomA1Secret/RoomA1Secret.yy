@@ -46,7 +46,8 @@
         {"properties":[
             {"propertyId":{"name":"destination","path":"objects/RoomTransition/RoomTransition.yy",},"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"value":"RoomHole","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":496.0,"y":624.0,"resourceVersion":"1.0","name":"inst_B535D40_1_1_5","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"Pickup","path":"objects/Pickup/Pickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":256.0,"resourceVersion":"1.0","name":"inst_5E16C98D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"ScrapPickup","path":"objects/ScrapPickup/ScrapPickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":960.0,"y":480.0,"resourceVersion":"1.0","name":"inst_703E36CE","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"ScrapPickup","path":"objects/ScrapPickup/ScrapPickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":288.0,"resourceVersion":"1.0","name":"inst_344270E8","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSetPit","path":"tilesets/TileSetPit/TileSetPit.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":43,"SerialiseHeight":24,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -107,7 +108,8 @@
   "inheritCode": true,
   "instanceCreationOrder": [
     {"name":"inst_B535D40_1_1_5","path":"rooms/RoomA1Secret/RoomA1Secret.yy",},
-    {"name":"inst_5E16C98D","path":"rooms/RoomA1Secret/RoomA1Secret.yy",},
+    {"name":"inst_703E36CE","path":"rooms/RoomA1Secret/RoomA1Secret.yy",},
+    {"name":"inst_344270E8","path":"rooms/RoomA1Secret/RoomA1Secret.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

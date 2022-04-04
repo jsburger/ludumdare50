@@ -8,7 +8,7 @@ for (var i = 0; i < array_length(watching); i++){
 }
 
 if _done = true{
-	with Player image_blend = c_yellow
+	//with Player image_blend = c_yellow
 	for (var i = 0; i < array_length(targets); i++){
 
 		with targets[i] alarm[1] = 1;
