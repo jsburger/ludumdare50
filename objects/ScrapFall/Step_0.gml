@@ -1,8 +1,8 @@
 /// @description Do shit
 
-if instance_exists(Hole) {
-	move_towards_point(Hole.x, Hole.y, 1)
-}
+
+move_towards_point(goalX, goalY, 1)
+
 timer += 1
 if timer >= 10 {
 	timer = 0

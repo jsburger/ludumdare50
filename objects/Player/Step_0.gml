@@ -42,10 +42,12 @@ else {
 
 //Pick up objects
 if !(instance_exists(carrying)) {
+	var picking = false
 	if instance_exists(Pickup) {
 		var n = instance_nearest(x, y, Pickup);
 		if distance_to_object(n) <= 4 {
 			if button_pressed(inputs.use) {
+				picking = true
 				sound_play(choose(sndPickup1, sndPickup2))
 				carrying = n
 				n.carrier = self
@@ -53,21 +55,100 @@ if !(instance_exists(carrying)) {
 				n.zspeed = 0
 			}
 		}
-	}	
+	}
+	//Pick up Boards
+	if !picking {
+		var tilemap = layer_tilemap_get_id("Collision"),
+			boardCheckX = x + lengthdir_x(20, throwDir),
+			boardCheckY = (bbox_top + bbox_bottom)/2 + lengthdir_y(20, throwDir);
+			
+		if (tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.BOARDS) {
+			var boardCount = 0,
+				boardDir = 0,
+				floorCount = 0;
+			for (var i = 0; i <= 3; i ++) {
+				var offX = lengthdir_x(1, i * 90),
+					offY = lengthdir_y(1, i * 90);
+				var tile = tilemap_get_at_pixel(tilemap, boardCheckX + 32 * offX, boardCheckY + 32 * offY)
+				if tile == TILETYPE.NONE {
+					floorCount++
+				}
+				if tile == TILETYPE.BOARDS {
+					boardDir = i * 90
+					boardCount++
+				}
+				if boardCount > 1 break
+			}
+			
+			var passed = ((boardCount == 1 && floorCount == 0) || boardCount == 0);
+			if (boardCount == 1 && floorCount > 0) {
+				var c = 1;
+				while (c <= 10) {
+					var tile = tilemap_get_at_pixel(tilemap, boardCheckX + lengthdir_x(32 * c, boardDir), boardCheckY + lengthdir_y(32 * c, boardDir));
+					if (tile == TILETYPE.BOARDS && isBoardSupported(tilemap, boardCheckX + lengthdir_x(32 * c, boardDir), boardCheckY + lengthdir_y(32 * c, boardDir))) {
+						passed = true
+						break
+					}
+					else {
+						if tile != TILETYPE.BOARDS {
+							break
+						}
+					}
+					c++
+				}
+			}
+			
+			if passed with instance_nearest(boardCheckX - boardCheckX mod TileWidth, boardCheckY - boardCheckY mod TileWidth, BoardPlaced) {
+				sprite_index = sprBoardsYellow
+			}
+			
+			if button_pressed(inputs.use) && passed {
+				tilemap_set_at_pixel(tilemap, TILETYPE.PIT, boardCheckX, boardCheckY)
+				with instance_create_layer(x, y, "Instances", Board) {
+					sound_play(choose(sndPickup1, sndPickup2))
+					other.carrying = self
+					carrier = other
+					z = 0
+					zspeed = 0
+				}
+				with instance_nearest(boardCheckX - boardCheckX mod TileWidth, boardCheckY - boardCheckY mod TileWidth, BoardPlaced) {
+					instance_destroy()
+				}
+			}
+		}
+	}
 }
 
 
 //Throw Objects
 else {
 	if button_pressed(inputs.use) {
-		with carrying {
-			motion_set(other.throwDir, 8)
-			on_throw(other)
+		var cancel = false
+		//Place Boards
+		if (carrying.object_index == Board) {
+			var tilemap = layer_tilemap_get_id("Collision"),
+				boardCheckX = x + lengthdir_x(20, throwDir),
+				boardCheckY = (bbox_top + bbox_bottom)/2 + lengthdir_y(20, throwDir);
+
+			if (tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.PIT) && canPlaceBoard(tilemap, boardCheckX, boardCheckY){
+				with carrying instance_destroy()
+				tilemap_set_at_pixel(tilemap, TILETYPE.BOARDS, boardCheckX, boardCheckY)
+				instance_create_depth(boardCheckX - boardCheckX mod TileWidth, boardCheckY - boardCheckY mod TileWidth, depthBase + 30, BoardPlaced)
+			}
+			else {
+				cancel = tilemap_get_at_pixel(tilemap, boardCheckX, boardCheckY) == TILETYPE.PIT
+			}
 		}
-		carrying = noone
-		throwing = true
-		setPlayerSprites()
-		sound_play(choose(sndThrow1, sndThrow2, sndThrow3))
+		if !cancel {
+			with carrying {
+				motion_set(other.throwDir, 8)
+				on_throw(other)
+			}
+			carrying = noone
+			throwing = true
+			setPlayerSprites()
+			sound_play(choose(sndThrow1, sndThrow2, sndThrow3))
+		}
 	}
 }
 //Set Sprites

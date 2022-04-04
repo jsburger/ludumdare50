@@ -1,15 +1,12 @@
 {
-  "spriteId": {
-    "name": "sprBoard",
-    "path": "sprites/sprBoard/sprBoard.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "Pickup",
-    "path": "objects/Pickup/Pickup.yy",
+    "name": "ScrapFall",
+    "path": "objects/ScrapFall/ScrapFall.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -23,15 +20,18 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Effects",
+    "path": "folders/Objects/Effects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Board",
+  "name": "PitFall",
   "tags": [],
   "resourceType": "GMObject",
 }

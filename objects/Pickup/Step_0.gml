@@ -23,7 +23,21 @@ if (z > 0 && !instance_exists(carrier)) {
 		z = 0
 		zSpeed = 0
 		friction = groundFriction
-		if (!place_meeting(x, y, Hole)) {
+		var hole = place_meeting(x, y, Hole);
+		if hole || getTileAt(x, y) == TILETYPE.PIT {
+			if (object_index != ScrapPickup || !hole) {
+				with instance_create_depth(x, y, depthBase, PitFall) {
+					sprite_index = other.sprite_index
+					owner = other
+					if hole {
+						goalX = Hole.x
+						goalY = Hole.y
+					}
+				}
+				instance_deactivate_object(self)
+			}
+		}
+		else {
 			instance_create_depth(x, y, depthBase + 1, DustBottom)
 			sound_play(sndScrapThud)
 		}
