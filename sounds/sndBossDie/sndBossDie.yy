@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndVOBoss.ogg",
-  "duration": 5.036167,
+  "soundFile": "sndBossDie.ogg",
+  "duration": 8.0,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sndVOBoss",
+  "name": "sndBossDie",
   "tags": [],
   "resourceType": "GMSound",
 }
