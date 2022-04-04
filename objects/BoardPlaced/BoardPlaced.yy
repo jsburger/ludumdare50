@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "sprBoard",
-    "path": "sprites/sprBoard/sprBoard.yy",
+    "name": "sprBoardPlaced",
+    "path": "sprites/sprBoardPlaced/sprBoardPlaced.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "Pickup",
-    "path": "objects/Pickup/Pickup.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -27,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Board",
+  "name": "BoardPlaced",
   "tags": [],
   "resourceType": "GMObject",
 }

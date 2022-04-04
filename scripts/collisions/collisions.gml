@@ -7,13 +7,21 @@ function doWallCollision(type=COLLISIONS.LOW) {
 	//Low collisions: Walls, Rock walls, Fences
 	if (type == COLLISIONS.LOW) {
 		check = function (tilemap, x, y) {
-			return tilemap_get_at_pixel(tilemap, x, y) || position_meeting(x, y, ColliderObject)
+			var tile = tilemap_get_at_pixel(tilemap, x, y);
+			return tile == TILETYPE.WALL || tile == TILETYPE.LOW_WALL || position_meeting(x, y, ColliderObject)
 		}
 	}
 	//High Collisions: Walls only
-	else {
+	else if type == COLLISIONS.HIGH {
 		check = function (tilemap, x, y) {
-			return tilemap_get_at_pixel(tilemap, x, y) == 1
+			var tile = tilemap_get_at_pixel(tilemap, x, y);
+			return tile == TILETYPE.WALL
+		}
+	}
+	else if type == COLLISIONS.WALKING {
+		check = function (tilemap, x, y) {
+			var tile = tilemap_get_at_pixel(tilemap, x, y);
+			return (tile > TILETYPE.NONE && tile != TILETYPE.BOARDS) || position_meeting(x, y, ColliderObject)
 		}
 	}
 	#macro TileWidth 32
@@ -70,5 +78,14 @@ function doWallCollision(type=COLLISIONS.LOW) {
 
 enum COLLISIONS {
 	HIGH,
-	LOW
+	LOW,
+	WALKING
+}
+
+enum TILETYPE {
+	NONE = 0,
+	WALL = 1,
+	LOW_WALL = 2,
+	PIT = 3,
+	BOARDS = 4
 }
