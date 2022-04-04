@@ -14,6 +14,7 @@ if !active{
 	for (var i = 0; i < array_length(wave1); i++){
 
 		var _s = instance_create_depth(wave1[i].x, wave1[i].y, depthBase, wave1[i].enemy);
+		with _s instance_create_depth(x, y, depth + 1, DustBottom);
 		array_push(watching, _s);
 		instance_destroy(wave1[i]);
 	}

@@ -5,13 +5,15 @@ event_inherited();
 
 spr_idle = sprEnemy3Idle;
 spr_walk = sprEnemy1Walk;
-spr_hurt = sprEnemy1Dead;
-spr_dead = sprEnemy1Dead;
+spr_hurt = sprEnemy3Dead;
+spr_dead = sprEnemy3Dead;
 spr_fire = sprEnemy3Fire;
+team = 0; 
 
-maxspeed = 3;
+maxspeed = 0;
 minspeed = 0;
-damage = 1;
+damage = 0;;
+gunangle = 0;
 
 alarm[0] = 60;
-friction = .5;
+friction = 10000;

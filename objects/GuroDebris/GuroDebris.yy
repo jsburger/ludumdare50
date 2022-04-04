@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprRockDebris",
-    "path": "sprites/sprRockDebris/sprRockDebris.yy",
+    "name": "sprEnemy3Debris",
+    "path": "sprites/sprEnemy3Debris/sprEnemy3Debris.yy",
   },
   "solid": false,
   "visible": true,

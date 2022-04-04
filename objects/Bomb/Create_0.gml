@@ -6,3 +6,4 @@ event_inherited();
 
 timer = room_speed * 8; // 8 secs
 lit = false;
+damage = 0;
