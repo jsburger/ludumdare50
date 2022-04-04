@@ -5,10 +5,10 @@ team = -1;
 
 repeat(12){
 
-	with instance_create_layer(x, y, "Instances", SmallSmoke){
+	with instance_create_depth(x, y, depth, SmallSmoke){
 	
 		motion_add(random(360), random_range(3, 6));
 	}
 }
 
-instance_create_depth(x, y, depth + 10, ScorchMark);
+instance_create_depth(x, y, depth + 20, ScorchMark);
