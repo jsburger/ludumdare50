@@ -102,7 +102,7 @@
   },
   "parent": {
     "name": "Walls",
-    "path": "folders/Sprites/Walls.yy",
+    "path": "folders/Sprites/Player/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprRock",

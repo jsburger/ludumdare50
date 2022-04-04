@@ -19,7 +19,8 @@ if (z > 0 && !instance_exists(carrier)) {
 	//Landing
 	if (z <= 0) {
 		squishProgress = 0
-		speed = 0
+		if object_index != BowlingBall speed = 0
+		else landed = true
 		z = 0
 		zSpeed = 0
 		friction = groundFriction

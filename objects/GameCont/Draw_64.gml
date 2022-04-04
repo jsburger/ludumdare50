@@ -1,9 +1,4 @@
 /// @description PLAYER HUD
-
-draw_set_color(c_black)
-draw_rectangle(0, 0, camera_get_view_width(view_camera[0]), 160, false)
-draw_set_color(c_white)
-
 if textProgress != -1 {
 	var texDrawY = 164,
 		texDrawX = camera_get_view_width(view_camera[0])/2;
@@ -19,6 +14,11 @@ if textProgress != -1 {
 
 if (!instance_exists(Player)){exit}
 var t = Player;
+
+draw_set_color(c_black)
+draw_rectangle(0, 0, camera_get_view_width(view_camera[0]), 160, false)
+draw_set_color(c_white)
+
 
 // Health drawing:
 var spr = sprHeartHUD,
@@ -47,11 +47,12 @@ for(var i = 0; i < t.maxhealth; i++){
 
 var width = camera_get_view_width(view_camera[0]) - 100,
 	xCenter = camera_get_view_width(view_camera[0])/2,
-	yCenter = 120;
+	yCenter = 120,
+	progress = instance_exists(Boss) ? Boss.hp/Boss.maxhealth : time/maxtime
 draw_line_width_color(xCenter - width/2, yCenter, xCenter + width/2, yCenter, 27, c_black, c_black)
-draw_line_width_color(xCenter - width/2, yCenter, xCenter - width/2 + width * time/maxtime, yCenter, 25, c_red, c_red)
+draw_line_width_color(xCenter - width/2, yCenter, xCenter - width/2 + width * progress, yCenter, 25, c_red, c_red)
 //Left side
 draw_sprite_ext(sprTimeBarEnd, 0, xCenter - width/2, yCenter, -1, 1, 0, c_white, 1)
 //Right side
 draw_sprite_ext(sprTimeBarEnd, 0, xCenter + width/2, yCenter, 1, 1, 0, c_black, 1)
-draw_sprite(sprTimeBarSun, (floor(time/10)) mod 2, xCenter - width/2 + width * time/maxtime, yCenter)
+draw_sprite(sprTimeBarSun, (floor(time/10)) mod 2, xCenter - width/2 + width * progress, yCenter)

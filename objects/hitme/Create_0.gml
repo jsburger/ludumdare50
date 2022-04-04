@@ -4,6 +4,8 @@
 maxhealth = 3;
 my_health = maxhealth;
 
+hurtFrames = 0
+
 team = 0;
 
 spr_idle = sprEnemy1Idle;
