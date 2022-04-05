@@ -2,6 +2,7 @@
 event_inherited()
 active = false;
 image_speed = 0
+depthBase += 5
 
 switch irandom(2) {
 
