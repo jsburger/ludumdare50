@@ -6,3 +6,4 @@ setTextPrompt([
 ])
 talkedTo = true;
 global.hasNPCRoboBlor = true;
+sound_play(sndVOBlor)

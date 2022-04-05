@@ -24,6 +24,8 @@ hasLasered = false
 goingToLaser = false
 isLasering = false
 laserAttackProgress = 0
+laserSound = -1
 
+sound_play(sndMusicBoss, 1, .7)
 
 dieTimer = 0

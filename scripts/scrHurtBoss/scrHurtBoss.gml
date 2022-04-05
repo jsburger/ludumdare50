@@ -9,7 +9,12 @@ function scrHurtBoss(damage) {
 			sprite_index = sprBossHurt
 			image_index = 0
 		}
-		sound_play(sndBossHurt)
+		if other.object_index == BowlingBall {
+			sound_play(sndBossHurtBowling)
+		}
+		else {
+			sound_play(sndBossHurt)
+		}
 	}
 }
 

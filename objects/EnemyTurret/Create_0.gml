@@ -17,3 +17,5 @@ gunangle = 0;
 
 alarm[0] = 60;
 friction = 10000;
+
+waitTime = 2

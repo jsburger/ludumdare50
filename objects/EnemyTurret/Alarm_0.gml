@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if waitTime > 0 {
+	alarm[0] = 1
+	exit
+}
+
 if sprite_index != spr_hurt{
 if instance_exists(Player) if distance_to_object(Player) <= 32 * 9 {
 

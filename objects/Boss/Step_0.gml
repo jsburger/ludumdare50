@@ -6,6 +6,7 @@ if attackTimer > 0 {
 
 if attackTimer == 0 {
 	if goingToLaser {
+		sound_play(sndBossLaserCharge)
 		sprite_index = sprBossLaserStart
 		image_index = 0
 		//setTextPrompt(["ENOUGH."])
@@ -34,6 +35,9 @@ if hp <= 50 && !hasLasered {
 if isLasering {
 	if !instance_exists(BossLaser) {
 		instance_create_layer(x, y - 20, "Instances", BossLaser)
+		sound_play(sndBossLaserFire)
+		audio_stop_sound(sndBossLaserCharge)
+		laserSound = audio_play_sound(sndBossFlamethrowerLoop, 1, true)
 	}
 	laserAttackProgress++
 	if laserAttackProgress >= 180 {
@@ -43,6 +47,7 @@ if isLasering {
 		sprite_index = sprBossLaserEnd
 		image_index = 0
 		attackTimer = 120
+		audio_stop_sound(laserSound)
 	}
 }
 

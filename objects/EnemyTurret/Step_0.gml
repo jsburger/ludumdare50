@@ -3,3 +3,6 @@
 
 if !irandom(69) minspeed = 0;
 speed = clamp(speed, minspeed, maxspeed);
+if waitTime >= 0 {
+	waitTime -= 1
+}

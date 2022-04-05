@@ -23,3 +23,5 @@ dead = false
 deadTime = 0
 
 snd_hurt = sndPlayerHurt
+spr_hurt = sprPlayerHurtLeft
+spr_dead = sprPlayerHurtLeft

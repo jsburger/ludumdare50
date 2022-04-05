@@ -15,3 +15,4 @@ setTextPrompt([
 talkedTo = true;
 global.hasNPCTrimblina = true;
 instance_create_depth(0, 0, 0, hpgiver);
+sound_play(sndVOTrimblina)

@@ -43,6 +43,8 @@ if (z > 0 && !instance_exists(carrier)) {
 				team = 1
 				damage = other.damage
 				alarm[1] = 2
+				image_xscale = 1.3
+				image_yscale = 1.3
 			}
 			instance_create_depth(x, y, depthBase + 1, DustBottom)
 			sound_play(choose(sndScrapThud1, sndScrapThud2))

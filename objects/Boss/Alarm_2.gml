@@ -12,7 +12,7 @@ if markerAttackProgress <= n {
 	sound_play(sndBossFireScrap)
 	with instance_create_depth(xpos, ypos, depthBase - 1, BossMarker) {
 		if (other.markerAttackProgress mod 3 == 1) isScrap = true
-		if isScrap && (true || globalGet("hasNPCPintendo")) isBowlingBall = irandom(1) == 0
+		if isScrap && (globalGet("hasNPCPintendo")) isBowlingBall = irandom(1) == 0
 	}
 	alarm[2] = 5
 }

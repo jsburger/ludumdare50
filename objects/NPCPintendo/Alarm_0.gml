@@ -17,3 +17,4 @@ setTextPrompt([
 ])
 talkedTo = true;
 global.hasNPCPintendo = true;
+sound_play(sndVOPintendo)

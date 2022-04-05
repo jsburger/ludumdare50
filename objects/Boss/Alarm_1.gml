@@ -2,9 +2,10 @@
 // You can write your code in this editor
 
 steamAttackProgress++
-if steamAttackProgress == 0 {
-	sound_play(sndBossBeginFlamethrower)
+if steamAttackProgress == 1 {
+	sound_play(sndBossBeginFlamethrower, 1.3, .6)
 	steamSound = audio_play_sound(sndBossFlamethrowerLoop, 1, true)
+	audio_sound_pitch(steamSound, 1.3)
 }
 if steamAttackProgress <= 10 {
 	for (var i = 0 - steamAttackProgress mod 2; i <= 8; i += 2) {

@@ -62,8 +62,6 @@
         {"properties":[
             {"propertyId":{"name":"destination","path":"objects/RoomTransition/RoomTransition.yy",},"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"value":"RoomSpawnToA2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":288.0,"y":384.0,"resourceVersion":"1.0","name":"inst_7247EDDB","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"EnemyDog","path":"objects/EnemyDog/EnemyDog.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":896.0,"y":256.0,"resourceVersion":"1.0","name":"inst_7394192","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"ComdeyPickup","path":"objects/ComdeyPickup/ComdeyPickup.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":832.0,"y":224.0,"resourceVersion":"1.0","name":"inst_1D41A3F6","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSetWallConcrete","path":"tilesets/TileSetWallConcrete/TileSetWallConcrete.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":43,"SerialiseHeight":24,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -214,8 +212,6 @@
     {"name":"inst_651AF725","path":"rooms/RoomHole/RoomHole.yy",},
     {"name":"inst_7247EDDB","path":"rooms/RoomHole/RoomHole.yy",},
     {"name":"inst_C193879","path":"rooms/RoomHole/RoomHole.yy",},
-    {"name":"inst_7394192","path":"rooms/RoomHole/RoomHole.yy",},
-    {"name":"inst_1D41A3F6","path":"rooms/RoomHole/RoomHole.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

@@ -9,7 +9,7 @@ if isScrap {
 }
 else {
 	with instance_create_layer(x, y, "Instances", Explosion) {
-		//idk
+		sound_play(sndBossExplosion1)
 	}
 }
 
