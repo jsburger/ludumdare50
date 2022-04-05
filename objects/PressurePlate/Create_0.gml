@@ -5,3 +5,4 @@ targets = [];
 depth += 1;
 
 depressed = false
+alwaysActive = false;

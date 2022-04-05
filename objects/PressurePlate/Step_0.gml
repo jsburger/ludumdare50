@@ -14,7 +14,7 @@ if (place_meeting(x, y, hitme) || (instance_exists(pickupcheck) && pickupcheck.z
 		image_index = 1;
 	}
 }
-else {
+else if !alwaysActive {
 	if (depressed) {
 		depressed = false
 		audio_stop_sound(sndStoneGrind); sound_play(sndStoneGrind)
