@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 time = 0;
-maxtime = room_speed * 60 * 5; // 5 mins
+maxtime = room_speed * 60 * 6; // 6 mins
 timeUp = false
 hasSentPrompt = false
 
