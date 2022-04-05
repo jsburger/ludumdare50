@@ -28,7 +28,7 @@ if fade >= 0 {
 		if fade >= 1 {
 			if timeUp {
 				if hasSentPrompt = false {
-					setTextPrompt(["YOU ARE MY FINAL SUBJECT.", "THE DAY IS UP.", "RETURN TO THE PIT AT ONCE."])
+					setTextPrompt(["YOU.", "YOU ARE MY FINAL SUBJECT.", "THE DAY IS UP.", "RETURN TO THE GREAT PIT AT ONCE."])
 					hasSentPrompt = true
 				}
 			}

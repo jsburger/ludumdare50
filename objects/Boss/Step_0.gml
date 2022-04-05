@@ -3,20 +3,49 @@
 if attackTimer > 0 {
 	attackTimer -= 1
 }
+
 if attackTimer == 0 {
-	//Bullet Hell attack
-	if attackCycle == 0 {
-		//Starts steam attack
-		sprite_index = sprBossAttack1Start
+	if goingToLaser {
+		sprite_index = sprBossLaserStart
 		image_index = 0
+		//setTextPrompt(["ENOUGH."])
 	}
-	//Markers/Scrap attack
-	if attackCycle == 1 {
-		sprite_index = sprBossMarkerAttackStart
-		image_index = 0
+	else {
+		//Bullet Hell attack
+		if attackCycle == 0 {
+			//Starts steam attack
+			sprite_index = sprBossAttack1Start
+			image_index = 0
+		}
+		//Markers/Scrap attack
+		if attackCycle == 1 {
+			sprite_index = sprBossMarkerAttackStart
+			image_index = 0
+		}
 	}
 	attackTimer = -1
 }
+
+if hp <= 50 && !hasLasered {
+	hasLasered = true
+	goingToLaser = true
+}
+
+if isLasering {
+	if !instance_exists(BossLaser) {
+		instance_create_layer(x, y - 20, "Instances", BossLaser)
+	}
+	laserAttackProgress++
+	if laserAttackProgress >= 180 {
+		goingToLaser = false
+		isLasering = false
+		with BossLaser instance_destroy()
+		sprite_index = sprBossLaserEnd
+		image_index = 0
+		attackTimer = 120
+	}
+}
+
 if hp <= 0 {
 	dieTimer++
 	with Projectile if object_index != Explosion instance_destroy()

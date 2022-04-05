@@ -14,6 +14,7 @@ timerResetting = false
 textArray = [];
 textIndex = 0
 textProgress = -1
+lastTextWriter = noone
 
 global.scrapCollected = 0
 global.scrapRequired = 2

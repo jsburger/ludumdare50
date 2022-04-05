@@ -3,10 +3,12 @@
 function scrHurtBoss(damage) {
 	with Boss {
 		hp -= damage
-		lastSprite = sprite_index
-		lastIndex = image_index
-		sprite_index = sprBossHurt
-		image_index = 0
+		if !isLasering {
+			lastSprite = sprite_index
+			lastIndex = image_index
+			sprite_index = sprBossHurt
+			image_index = 0
+		}
 		sound_play(sndBossHurt)
 	}
 }
