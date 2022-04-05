@@ -12,3 +12,5 @@ spr_idle = sprEnemy1Idle;
 spr_walk = sprEnemy1Idle;
 spr_hurt = sprEnemy1Idle;
 
+snd_hurt = sndEnemyHurt;
+snd_die = sndEnemyDie;

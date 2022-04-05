@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprBoard",
-    "path": "sprites/sprBoard/sprBoard.yy",
+    "name": "sprKey2",
+    "path": "sprites/sprKey2/sprKey2.yy",
   },
   "solid": false,
   "visible": true,

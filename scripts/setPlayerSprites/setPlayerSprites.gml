@@ -6,7 +6,7 @@ function setPlayerSprites(){
 		left = sign(dcos(throwDir)) == -1,
 		is_throwing = throwing == true;
 	
-	if hurtFrames > 0 {
+	if hurtFrames > 110 {
 		var s = left ? sprPlayerHurtLeft : sprPlayerHurtLeft;
 		if sprite_index != s {
 			image_index = 0

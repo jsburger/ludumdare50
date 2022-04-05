@@ -21,3 +21,5 @@ dustTime = 0
 
 dead = false
 deadTime = 0
+
+snd_hurt = sndPlayerHurt
