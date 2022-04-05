@@ -6,6 +6,8 @@ sprite_index = sprBossHoleOut
 hp = 100
 maxhealth = health
 
+steamSound = -1
+
 lastSprite = sprBossIdle
 image_index = 0
 

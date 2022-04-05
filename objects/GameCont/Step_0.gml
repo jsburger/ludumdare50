@@ -10,7 +10,8 @@ if global.scrapCollected >= global.scrapRequired && fade = -1{
 	fade = 0
 }
 
-if time == maxtime && hasSentPrompt == false && fade = -1{
+if time == maxtime && hasSentPrompt == false && fade = -1 {
+	sound_play(sndTimeUp)
 	fade = 0
 	fadingOut = false
 	timeUp = true

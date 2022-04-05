@@ -6,4 +6,5 @@ instance_create_layer(x, y, "Instances", Glint)
 if comedy {
 	global.hasNPCComedybot = true
 	setTextPrompt(["YOU FEEL BLESSED."])
+	sound_play(sndMusicComedybot)
 }

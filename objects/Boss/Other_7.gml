@@ -27,6 +27,7 @@ switch(sprite_index) {
 	case sprBossHoleEnd:
 	case sprBossLaserEnd:
 	case sprBossMarkerAttackEnd:
+		sound_play(sndBossSlam)
 		sprite_index = sprBossIdle
 		image_index = 0
 		break
