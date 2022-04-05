@@ -51,8 +51,8 @@
     {"spriteId":null,"colour":4279900698,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
   "inheritLayers": false,
-  "creationCodeFile": "",
-  "inheritCode": true,
+  "creationCodeFile": "${project_dir}/rooms/MenuRoom2/RoomCreationCode.gml",
+  "inheritCode": false,
   "instanceCreationOrder": [
     {"name":"inst_2DD8D3E8","path":"rooms/MenuRoom2/MenuRoom2.yy",},
     {"name":"inst_291BDA33","path":"rooms/MenuRoom2/MenuRoom2.yy",},

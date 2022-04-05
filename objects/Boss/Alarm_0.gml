@@ -4,3 +4,5 @@
 sprite_index = sprBossHoleEnd
 image_index = 0
 attackTimer = attackReset
+
+sound_play(sndMusicBoss)
