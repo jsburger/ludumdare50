@@ -1,7 +1,6 @@
 /// @description Increment time, depth sorting
+
 time = min(++time, maxtime);
-
-
 if textProgress != -1 {
 	textProgress++
 }
@@ -43,6 +42,7 @@ if fade >= 0 {
 	
 	if fade == 1 && timeUp {
 		if textProgress == -1 {
+			if room == RoomHole room_goto(BossRoom)
 			fadingOut = true
 		}
 	}
