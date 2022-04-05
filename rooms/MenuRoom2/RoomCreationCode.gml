@@ -1,1 +1,1 @@
-sound_play(sndMusicTitle)
+sound_play(sndMusicTitle, 1, .6)

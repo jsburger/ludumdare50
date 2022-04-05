@@ -39,6 +39,11 @@ if (z > 0 && !instance_exists(carrier)) {
 			}
 		}
 		else {
+			with instance_create_depth(x, y, depthBase, PickupSplashDamage) {
+				team = 1
+				damage = other.damage
+				alarm[1] = 2
+			}
 			instance_create_depth(x, y, depthBase + 1, DustBottom)
 			sound_play(choose(sndScrapThud1, sndScrapThud2))
 		}

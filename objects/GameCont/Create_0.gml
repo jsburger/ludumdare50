@@ -2,14 +2,14 @@
 // You can write your code in this editor
 
 time = 0;
-maxtime = room_speed * 60 * 6; // 6 mins
+maxtime = room_speed * 60 * 5; // 5 mins
 timeUp = false
 hasSentPrompt = false
 
 fade = -1
 fadingOut = false
 timerResetting = false
-
+timerReset = 0
 
 textArray = [];
 textIndex = 0

@@ -1,6 +1,7 @@
 /// @description Increment time, depth sorting
 time = min(++time, maxtime);
 
+
 if textProgress != -1 {
 	textProgress++
 }
@@ -47,13 +48,18 @@ if fade >= 0 {
 	}
 	
 	if timerResetting {
-		time -= 10
+		time -= timerReset
+		timerReset ++
 		if time <= 0 {
+			timerReset = 0
 			time = 0
 			timerResetting = false
 			fadingOut = true
 			global.day++
 			global.scrapCollected = 0
+			global.scrapRequired++
+			with Player my_health = maxhealth
+			sound_play(sndDayBegin)
 		}
 	}
 }
@@ -65,5 +71,5 @@ with all if object_index != GameCont && visible {
 	}
 	var zCheck = variable_instance_get(self, "z");
 	zCheck = zCheck == undefined ? 0 : zCheck
-	depth = depthBase - ((bbox_top + bbox_bottom) / 2 + zCheck) div 10
+	depth = depthBase - ((bbox_bottom + bbox_top + bbox_bottom)/3 + zCheck) div 8
 }

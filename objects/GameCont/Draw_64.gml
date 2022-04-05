@@ -21,6 +21,10 @@ if textProgress != -1 {
 	draw_rectangle_color(0, texDrawY, camera_get_view_width(view_camera[0]), texDrawY + texHeight, c_black, c_black, c_black, c_black, false)
 	
 	draw_text_transformed(texDrawX, texDrawY, string_copy(textArray[textIndex], 0, textProgress), 2, 2, 0)
+	
+	if textProgress >= string_length(textArray[textIndex]) {
+		draw_text_transformed(texDrawX + string_width(textArray[textIndex]) + 20, texDrawY + 6, "E", 1.25, 1.25, 0)
+	}
 }
 
 
