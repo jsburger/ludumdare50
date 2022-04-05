@@ -5,4 +5,4 @@ active = false
 image_alpha = .5
 hasPrompted = false
 
-if !globalGet("HasNPCComedybot") instance_destroy()
+if !globalGet("hasNPCComedybot") instance_destroy()
