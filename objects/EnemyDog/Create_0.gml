@@ -15,5 +15,5 @@ damage = 1;
 maxhealth = 2;
 my_health = maxhealth;
 
-alarm[0] = 60;
+alarm[0] = 50 + irandom(20);
 friction = .5;

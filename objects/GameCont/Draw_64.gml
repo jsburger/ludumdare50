@@ -39,9 +39,11 @@ var spr = sprHeartHUD,
 	ypos = 42;
 	
 for(var i = 0; i < t.maxhealth; i++){
-
-	var img = t.my_health > i ? ceil((t.hurtFrames + 3)/2) mod 2 : 2; // Replace 0 with hitframe eventually
 	
+	var img = 0;
+	if (t.hurtFrames > 0 && floor((t.hurtFrames + 3)/4) mod 3 > 0) img = 1;
+	if t.my_health <= i img = 2
+
 	var scale = 1;
 	if (t.my_health == i + 1) scale = 1 + sin((time / room_speed / (t.my_health == 1 ? 1 : 6)) mod 360) * (t.my_health == 1 ? .15 : .05);
 	
@@ -69,5 +71,5 @@ draw_sprite_ext(sprTimeBarEnd, 0, xCenter - width/2, yCenter, -1, 1, 0, c_white,
 draw_sprite_ext(sprTimeBarEnd, 0, xCenter + width/2, yCenter, 1, 1, 0, c_black, 1)
 draw_sprite(sprTimeBarSun, (floor(time/10)) mod 2, xCenter - width/2 + width * progress, yCenter)
 
-draw_sprite_ext(sprTrash1, 0, xpos + width/2 + 20, ypos, 1, 1, 0, c_white, 1)
-draw_text_transformed(xpos + width/2 + 54, ypos - 10, string(global.scrapCollected) + "/" + string(global.scrapRequired), 2, 2, 0)
+draw_sprite_ext(sprTrash1, 0,width, ypos, 1, 1, 0, c_white, 1)
+draw_text_transformed(width, ypos + 25, string(global.scrapCollected) + "/" + string(global.scrapRequired), 2, 2, 0)
