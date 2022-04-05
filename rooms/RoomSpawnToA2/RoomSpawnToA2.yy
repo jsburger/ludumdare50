@@ -49,6 +49,7 @@
         {"properties":[
             {"propertyId":{"name":"destination","path":"objects/RoomTransition/RoomTransition.yy",},"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"value":"RoomA2BoardIntro","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":90.0,"scaleX":0.5,"scaleY":3.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":624.0,"resourceVersion":"1.0","name":"inst_C59534D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"Board","path":"objects/Board/Board.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":416.0,"resourceVersion":"1.0","name":"inst_52C66161","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"TileSetPit","path":"tilesets/TileSetPit/TileSetPit.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":43,"SerialiseHeight":24,"TileSerialiseData":[
 2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,2147483648,
@@ -162,6 +163,7 @@
   "instanceCreationOrder": [
     {"name":"inst_B535D40_1_1_11","path":"rooms/RoomSpawnToA2/RoomSpawnToA2.yy",},
     {"name":"inst_C59534D","path":"rooms/RoomSpawnToA2/RoomSpawnToA2.yy",},
+    {"name":"inst_52C66161","path":"rooms/RoomSpawnToA2/RoomSpawnToA2.yy",},
   ],
   "inheritCreationOrder": true,
   "sequenceId": null,

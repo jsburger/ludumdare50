@@ -12,6 +12,10 @@ if carrier != -4{
 	lit = true
 	sprite_index = sprBombLit
 }
+if lit && timer <= room_speed * 1{
+	
+	sprite_index = sprBombAboutToExplode
+}
 
 if lit && timer-- <= 0{
 	
