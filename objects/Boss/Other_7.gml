@@ -3,6 +3,21 @@
 
 
 switch(sprite_index) {
+	case sprBossLaserStart:
+		image_index = 0
+		sprite_index = sprBossLaserStartHold
+		alarm[3] = 140
+		with SpiritOfComedyBot {
+			active = true
+		}
+		break
+	
+	case sprBossLaserMiddleStart:
+		image_index = 0
+		sprite_index = sprBossLaserMiddleHold
+		isLasering = true
+		break
+	
 	case sprBossHoleOut:
 		sprite_index = sprBossHoleHold
 		image_index = 0
@@ -10,6 +25,7 @@ switch(sprite_index) {
 		break
 	
 	case sprBossHoleEnd:
+	case sprBossLaserEnd:
 	case sprBossMarkerAttackEnd:
 		sprite_index = sprBossIdle
 		image_index = 0

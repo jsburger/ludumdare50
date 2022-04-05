@@ -17,4 +17,11 @@ steamAttackProgress = 0
 steamAttackOffset = 0
 markerAttackProgress = 0
 markerAttackOffset = 0
+
+hasLasered = false
+goingToLaser = false
+isLasering = false
+laserAttackProgress = 0
+
+
 dieTimer = 0

@@ -4,6 +4,7 @@ function setTextPrompt(arrayOfStrings){
 	GameCont.textArray = arrayOfStrings
 	GameCont.textIndex = 0
 	GameCont.textProgress = 0
+	GameCont.lastTextWriter = self
 }
 
 function advanceTextPrompt() {
