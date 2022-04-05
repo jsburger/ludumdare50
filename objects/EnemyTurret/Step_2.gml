@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 doWallCollision(COLLISIONS.WALKING)
-if (gunangle < 180 || gunangle >= 270) image_xscale = -1 else image_xscale = 1
+
 
 if my_health <= 0{
 	repeat(irandom_range(3, 6)) {

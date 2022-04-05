@@ -137,8 +137,26 @@ if !(instance_exists(carrying)) {
 	}
 }
 
+//Advance Text
+if (canUse && instance_exists(GameCont) && GameCont.textProgress != -1) {
+	if button_pressed(inputs.use) {
+		canUse = false
+		advanceTextPrompt()
+	}
+}
+//Use Interactables
+if (canUse && instance_exists(Interactable) && distance_to_object(Interactable) <= 4) {
+	if button_pressed(inputs.use) {
+		canUse = false
+		with instance_nearest(x, y, Interactable) {
+			alarm[0] = 1
+		}
+	}
+}
+
+
 //Throw Objects
-else {
+if (instance_exists(carrying)) {
 	if button_pressed(inputs.use) && canUse {
 		var cancel = false
 		//Place Boards
@@ -167,22 +185,6 @@ else {
 			throwing = true
 			setPlayerSprites()
 			sound_play(choose(sndThrow1, sndThrow2, sndThrow3))
-		}
-	}
-}
-//Advance Text
-if (canUse && instance_exists(GameCont) && GameCont.textProgress != -1) {
-	if button_pressed(inputs.use) {
-		canUse = false
-		advanceTextPrompt()
-	}
-}
-//Use Interactables
-if (canUse && instance_exists(Interactable) && distance_to_object(Interactable) <= 4) {
-	if button_pressed(inputs.use) {
-		canUse = false
-		with instance_nearest(x, y, Interactable) {
-			alarm[0] = 1
 		}
 	}
 }
