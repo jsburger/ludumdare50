@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Check for player
 
 if waitTime > 0 {
 	alarm[0] = 1
@@ -13,13 +12,10 @@ if sprite_index != spr_hurt{
 		var _dir = point_distance(x, y, Player.x, Player.y);	
 		if collision_line(x, y, x + lengthdir_x(range, _dir), y + lengthdir_y(range, _dir), ColliderObject, false, true) == noone && distance_to_object(Player) <= 32 * 9 {
 
+				// Get ready to fire:
 				gunangle = point_direction(x, y, Player.x, Player.y);
-
-				sprite_index = spr_fire;
-				direction = random(360);
-				alarm[1] = 24;
-				alarm[0] = choose(120);
-		
+				instance_create_depth(x + image_xscale * 24, y - 24, depthBase - 1, EnemyNotice);
+				alarm[2] = 14;
 		}else{
 
 			sprite_index = spr_idle;

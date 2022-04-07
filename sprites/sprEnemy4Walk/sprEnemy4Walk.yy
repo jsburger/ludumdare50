@@ -114,7 +114,7 @@
   },
   "parent": {
     "name": "Enemy4",
-    "path": "folders/Sprites/Enemy4.yy",
+    "path": "folders/Sprites/Enemies/Enemy4.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnemy4Walk",

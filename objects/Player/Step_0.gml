@@ -61,7 +61,7 @@ if !(instance_exists(carrying)) {
 	var picking = false
 	if instance_exists(Pickup) && canUse {
 		var n = instance_nearest(x, y, Pickup);
-		if distance_to_object(n) <= 4 && n.z <= 12{
+		if distance_to_object(n) <= interactRange && n.z <= 12{
 			if button_pressed(inputs.use) {
 				canUse = false
 				picking = true
@@ -145,7 +145,7 @@ if (canUse && instance_exists(GameCont) && GameCont.textProgress != -1) {
 	}
 }
 //Use Interactables
-if (canUse && instance_exists(Interactable) && distance_to_object(Interactable) <= 4) {
+if (canUse && instance_exists(Interactable) && distance_to_object(Interactable) <= interactRange) {
 	if button_pressed(inputs.use) {
 		canUse = false
 		with instance_nearest(x, y, Interactable) {
@@ -189,6 +189,22 @@ if (instance_exists(carrying)) {
 	}
 }
 
+//Blink if has iframes
+if hurtFrames > 0 && sprite_index != spr_hurt {
+	var _wait = hurtFrames > 30 ? 6 : 4;
+	image_alpha = hurtFrames mod _wait > 1;
+}else image_alpha = 1;
+
+//Highlight nearest interactable or Pickup
+var _int = noone,
+    _pic = noone;
+if instance_exists(Interactable) _int = instance_nearest(x, y, Interactable);
+if instance_exists(Pickup) _pic = instance_nearest(x, y, Pickup);
+
+if distance_to_object(_pic) < distance_to_object(_int){
+	
+	if distance_to_object(_pic)< interactRange && _pic.z <= interactRange && _pic != carrying _pic.nearest = true;
+}else if distance_to_object(_int)< interactRange _int.nearest = true;
 
 //Set Sprites
 if !(throwing) {

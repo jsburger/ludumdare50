@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 targets = [];
-depth += 1;
+depth += 35;
 
 depressed = false
 alwaysActive = false;

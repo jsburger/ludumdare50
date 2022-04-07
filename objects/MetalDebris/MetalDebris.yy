@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects",
-    "path": "folders/Objects/Effects.yy",
+    "name": "Debris",
+    "path": "folders/Objects/Effects/Debris.yy",
   },
   "resourceVersion": "1.0",
   "name": "MetalDebris",

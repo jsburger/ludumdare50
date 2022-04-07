@@ -106,7 +106,7 @@
   },
   "parent": {
     "name": "Enemy3",
-    "path": "folders/Sprites/Enemy3.yy",
+    "path": "folders/Sprites/Enemies/Enemy3.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnemy3Dead",

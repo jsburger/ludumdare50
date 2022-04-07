@@ -12,9 +12,10 @@ maxhealth = 3;
 my_health = maxhealth;
 team = 1;
 
-carrying = noone
-throwDir = direction
-throwing = false
+carrying  = noone
+throwDir  = direction
+throwing  = false
+interactRange = 4;
 
 walkSound = sndPlayerMove
 dustTime = 0

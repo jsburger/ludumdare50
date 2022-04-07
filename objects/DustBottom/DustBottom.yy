@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Effects",
-    "path": "folders/Objects/Effects.yy",
+    "name": "Dust",
+    "path": "folders/Objects/Effects/Dust.yy",
   },
   "resourceVersion": "1.0",
   "name": "DustBottom",
