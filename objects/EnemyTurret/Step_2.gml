@@ -5,12 +5,3 @@
 event_inherited();
 doWallCollision(COLLISIONS.WALKING)
 
-
-if my_health <= 0{
-	repeat(irandom_range(3, 6)) {
-		with instance_create_depth(x, y, depthBase + 10, GuroDebris) {
-			motion_set(random(360), random_range(1, 3))
-		}
-	}
-	instance_destroy(self, true);
-}
