@@ -12,13 +12,13 @@ depth -= 2
 collisionType = COLLISIONS.HIGH
 
 on_throw = function (thrower) {
-	carrier = noone
+	carrier = -4
 	z = -carryOffset
 	zSpeed = 10
 	friction = airFriction
 }
 
-carrier = noone
+carrier = -4
 carryOffset = -18
 
 z = 0
