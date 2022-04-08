@@ -25,6 +25,7 @@ if (z > 0 && !instance_exists(carrier)) {
 		z = 0
 		zSpeed = 0
 		friction = groundFriction
+		
 		var hole = place_meeting(x, y, Hole);
 		if hole || getTileAt(x, y) == TILETYPE.PIT {
 			if ((object_index != ScrapPickup && object_index != ComdeyPickup) || !hole) {
@@ -37,6 +38,7 @@ if (z > 0 && !instance_exists(carrier)) {
 						goalY = Hole.y
 					}
 				}
+				speed = 0;
 				instance_deactivate_object(self)
 			}
 		}

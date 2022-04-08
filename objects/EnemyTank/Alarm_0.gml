@@ -8,7 +8,7 @@ if instance_exists(Player){
 	
 		if tracking = false{
 			
-			instance_create_depth(x + image_xscale * 24, y - 24, depthBase - 5, EnemyNotice);
+			emoteCreate(self, sprEnemyNotice);
 			tracking = true;
 			alarm[1] = 30;
 		}

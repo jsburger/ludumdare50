@@ -14,7 +14,7 @@ if sprite_index != spr_hurt{
 
 				// Get ready to fire:
 				gunangle = point_direction(x, y, Player.x, Player.y);
-				instance_create_depth(x + image_xscale * 24, y - 24, depthBase - 1, EnemyNotice);
+				emoteCreate(self, sprEnemyNotice);
 				alarm[2] = 14;
 		}else{
 

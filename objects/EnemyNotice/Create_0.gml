@@ -3,6 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-damage = 2;
-groundFriction = 0
-landed = false
+target = noone;

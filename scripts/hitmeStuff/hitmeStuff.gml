@@ -75,3 +75,17 @@ function corpseCreate(target){
 			break;
 	}
 }
+
+function emoteCreate(target, sprite){
+
+	with instance_create_depth(x + image_xscale * 24, y - 24, depthBase - 5, EnemyNotice){
+		
+		var _o = target;
+		with EnemyNotice{
+			
+			if self.target == _o instance_destroy();
+		}
+		self.target = _o;
+		sprite_index = sprite;
+	}
+}

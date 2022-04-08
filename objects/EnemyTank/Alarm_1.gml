@@ -8,4 +8,8 @@ var _dir = point_direction(x, y, Player.x, Player.y),
 	motion_add(_dir + random_range(30, -30), 1);
 
 	if tracking alarm[1] = 10 + irandom(10);
-}else tracking = false;
+}else {
+	
+	emoteCreate(self, sprEnemyBaffle);
+	alarm[2] = 12;
+}

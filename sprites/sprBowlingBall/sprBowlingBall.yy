@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Boss",
-    "path": "folders/Sprites/Boss.yy",
+    "name": "Throwables",
+    "path": "folders/Sprites/Throwables.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBowlingBall",
