@@ -180,6 +180,7 @@ if (instance_exists(carrying)) {
 			with carrying {
 				motion_set(other.throwDir, 8)
 				on_throw(other)
+				persistent = false
 			}
 			carrying = noone
 			throwing = true

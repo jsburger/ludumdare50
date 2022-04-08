@@ -5,9 +5,8 @@ event_inherited();
 zChange = -.3
 
 on_throw = function (thrower) {
-	carrier = noone
+	carrier = -4
 	z = -carryOffset
-	y -= carryOffset
 	zSpeed = 3
 	friction = airFriction
 }

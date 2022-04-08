@@ -25,9 +25,10 @@ function doWallCollision(type=COLLISIONS.LOW) {
 		}
 	}
 	#macro TileWidth 32
+	
 
 	if (hspeed < 0) {
-		for (var i = bbox_top; true; i += TileWidth) {
+		for (var i = bbox_top + 1; true; i += TileWidth) {
 			var yCheck = clamp(i, bbox_top + 1, bbox_bottom - 1),
 				xCheck = bbox_left + hspeed;
 			if (check(tilemap, xCheck, yCheck)) {
@@ -39,7 +40,7 @@ function doWallCollision(type=COLLISIONS.LOW) {
 		}
 	}
 	else if (hspeed > 0) {
-		for (var i = bbox_top; true; i += TileWidth) {
+		for (var i = bbox_top + 1; true; i += TileWidth) {
 			var yCheck = clamp(i, bbox_top + 1, bbox_bottom - 1),
 				xCheck = bbox_right + hspeed;
 			if (check(tilemap, xCheck, yCheck)) {
