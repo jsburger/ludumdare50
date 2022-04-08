@@ -73,3 +73,14 @@ with all if object_index != GameCont && visible {
 	zCheck = zCheck == undefined ? 0 : zCheck
 	depth = depthBase - ((bbox_bottom + bbox_top + bbox_bottom)/3 + zCheck) div 8
 }
+
+// Screenshake:
+var 
+if (shake > 0){
+	
+	if !shakeLength-- {
+	
+		shake -= shakeFade;
+	}
+	camera_set_view_pos(view_camera[0], camx + random_range(-shake/2, shake/2), camy + random_range(-shake/2, shake/2));
+}else shake = 0;

@@ -4,6 +4,7 @@
 //Travel through rooms when carried
 if instance_exists(carrier) {
 	persistent = true
+	carried = true;
 }
 else persistent = false
 
@@ -29,6 +30,7 @@ if (z > 0 && !instance_exists(carrier)) {
 			if ((object_index != ScrapPickup && object_index != ComdeyPickup) || !hole) {
 				with instance_create_depth(x, y, depthBase, PitFall) {
 					sprite_index = other.sprite_index
+					image_index = other.image_index;
 					owner = other
 					if hole {
 						goalX = Hole.x
@@ -48,6 +50,8 @@ if (z > 0 && !instance_exists(carrier)) {
 			}
 			instance_create_depth(x, y, depthBase + 1, DustBottom)
 			sound_play(choose(sndScrapThud1, sndScrapThud2))
+			
+			if !reusable && carried{instance_destroy(); exit}
 		}
 	}
 }

@@ -16,6 +16,12 @@ textIndex = 0
 textProgress = -1
 lastTextWriter = noone
 
+shake = 0;
+shakeLength = 0;
+shakeFade = 0;
+camx = 224;
+camy = -32;
+
 global.scrapCollected = 0
 global.scrapRequired = 2
 global.day = 1

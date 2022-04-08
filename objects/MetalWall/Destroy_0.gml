@@ -9,3 +9,4 @@ repeat(irandom_range(2, 4)) {
 	}
 }
 instance_create_depth(x, y - 6, depth - 200, DustTop)
+screenShake(10, 3, 2);

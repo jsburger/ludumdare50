@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 team = -100;
-damage = 2;
+damage = 1;
 var _d = 30;
 depth -= _d;
 
@@ -15,3 +15,4 @@ repeat(12){
 }
 
 instance_create_depth(x, y, depth + 20 + _d, ScorchMark);
+screenShake(12, 3, 1);

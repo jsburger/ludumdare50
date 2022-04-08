@@ -6,6 +6,7 @@ nearest  = false; // whether or not this pickup is the closest pickup/interactab
 right	 = 1;     // if this pickup looks to the right (1) or left (-1)
 canright = true;  // if right can be used. if false right cannot be changed
 reusable = true;  // if false destroys the pickup on hit
+carried  = false; // if this pickup has been carried at some point
 
 groundFriction = 1
 airFriction = .09
