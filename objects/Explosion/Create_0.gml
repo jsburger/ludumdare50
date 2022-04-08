@@ -1,7 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 event_inherited();
-team = -1;
+team = -100;
+damage = 2;
+var _d = 30;
+depth -= _d;
 
 repeat(12){
 
@@ -11,4 +14,4 @@ repeat(12){
 	}
 }
 
-instance_create_depth(x, y, depth + 20, ScorchMark);
+instance_create_depth(x, y, depth + 20 + _d, ScorchMark);

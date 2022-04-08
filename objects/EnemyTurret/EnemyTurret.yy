@@ -40,8 +40,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hitmes",
-    "path": "folders/Objects/Hitmes.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Hitmes/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "EnemyTurret",

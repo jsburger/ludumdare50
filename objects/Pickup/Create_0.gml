@@ -1,10 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-team = 1;
+team   = 1;
 damage = 1;
-nearest = false;
-right = 1;
-reusable = true;
+nearest  = false; // whether or not this pickup is the closest pickup/interactable within player range
+right	 = 1;     // if this pickup looks to the right (1) or left (-1)
+canright = true;  // if right can be used. if false right cannot be changed
+reusable = true;  // if false destroys the pickup on hit
 
 groundFriction = 1
 airFriction = .09

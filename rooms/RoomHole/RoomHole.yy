@@ -235,8 +235,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Rooms",
-    "path": "folders/Rooms.yy",
+    "name": "Spawn area",
+    "path": "folders/Rooms/MapRooms/Spawn area.yy",
   },
   "resourceVersion": "1.0",
   "name": "RoomHole",

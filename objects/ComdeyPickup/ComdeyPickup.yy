@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Scraps",
+    "path": "folders/Objects/Pickups/Scraps.yy",
   },
   "resourceVersion": "1.0",
   "name": "ComdeyPickup",

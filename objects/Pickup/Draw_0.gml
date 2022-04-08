@@ -5,7 +5,7 @@ y -= z
 var curve = animcurve_channel_evaluate(animcurve_get_channel(CurveSquish, "curve1"), squishProgress);
 image_yscale = curve + 1
 var _xscale = image_xscale
-if instance_exists(carrier) && carrier.hspeed != 0 right = carrier.hspeed > 0 ? -1 : 1;
+if instance_exists(carrier) && canright && carrier.hspeed != 0 right = carrier.hspeed > 0 ? -1 : 1;
 image_xscale = right;
 if nearest {
 	gpu_set_fog(true, c_yellow, 0, 0);

@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Keys",
+    "path": "folders/Objects/Pickups/Keys.yy",
   },
   "resourceVersion": "1.0",
   "name": "Key2",

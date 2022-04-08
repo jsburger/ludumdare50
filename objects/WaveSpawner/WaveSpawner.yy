@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Hitmes",
-    "path": "folders/Objects/Hitmes.yy",
+    "name": "Wave Spawners",
+    "path": "folders/Objects/Hitmes/Wave Spawners.yy",
   },
   "resourceVersion": "1.0",
   "name": "WaveSpawner",

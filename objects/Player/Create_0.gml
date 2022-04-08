@@ -11,6 +11,7 @@ maxSpeed = 4
 maxhealth = 3;
 my_health = maxhealth;
 team = 1;
+damage = 0;
 
 carrying  = noone
 throwDir  = direction

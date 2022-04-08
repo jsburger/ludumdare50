@@ -9,8 +9,8 @@ spr_hurt = sprEnemy4Hurt;
 spr_dead = sprEnemy4Dead;
 spr_hit  = sprHitmeHitL;
 
-damage = 2;
-range = 32 * 4;
+damage = 1;
+range = 32 * 5;
 maxspeed = 1;
 minspeed = 0;
 tracking = false;
