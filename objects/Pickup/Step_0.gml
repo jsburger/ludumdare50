@@ -39,7 +39,7 @@ if (z > 0 && !instance_exists(carrier)) {
 			}
 		}
 		else {
-			with instance_create_depth(x, y, depthBase, PickupSplashDamage) {
+			if damage > 0 with instance_create_depth(x, y, depthBase, PickupSplashDamage) {
 				team = 1
 				damage = other.damage
 				alarm[1] = 2

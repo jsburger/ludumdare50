@@ -2,6 +2,7 @@
 depth -= 2
 fallProgress = 0
 timer = 0
+value = 1;
 
 goalX = x
 goalY = y

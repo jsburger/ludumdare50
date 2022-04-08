@@ -11,6 +11,7 @@ team = 0;
 spr_idle = sprEnemy1Idle;
 spr_walk = sprEnemy1Idle;
 spr_hurt = sprEnemy1Idle;
+spr_hit  = sprHitmeHit;
 
 snd_hurt = sndEnemyHurt;
-snd_die = sndEnemyDie;
+snd_die  = sndEnemyDie;

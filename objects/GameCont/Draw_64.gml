@@ -69,10 +69,12 @@ var width = camera_get_view_width(view_camera[0]) - 100,
 	progress = instance_exists(Boss) ? Boss.hp/Boss.maxhealth : time/maxtime
 draw_line_width_color(xCenter - width/2, yCenter, xCenter + width/2, yCenter, 27, c_black, c_black)
 draw_line_width_color(xCenter - width/2, yCenter, xCenter - width/2 + width * progress, yCenter, 25, c_red, c_red)
+draw_line_width_color(xCenter - width/2 + width * progress, yCenter, xCenter + width/2, yCenter, 25, $3b3224, $3b3224)
 //Left side
 draw_sprite_ext(sprTimeBarEnd, 0, xCenter - width/2, yCenter, -1, 1, 0, c_white, 1)
 //Right side
 draw_sprite_ext(sprTimeBarEnd, 0, xCenter + width/2, yCenter, 1, 1, 0, c_black, 1)
+draw_sprite_ext(sprTimeBarLeftEnd, 0, xCenter + width/2, yCenter, 1, 1, 0, c_white, 1)
 draw_sprite(sprTimeBarSun, (floor(time/10)) mod 2, xCenter - width/2 + width * progress, yCenter)
 
 draw_sprite_ext(sprTrash1, 0,width, ypos, 1, 1, 0, c_white, 1)

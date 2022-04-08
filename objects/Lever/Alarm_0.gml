@@ -14,3 +14,4 @@ if !active{
 		}
 	}
 }
+active = !active;

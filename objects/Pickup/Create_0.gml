@@ -3,6 +3,8 @@
 team = 1;
 damage = 1;
 nearest = false;
+right = 1;
+reusable = true;
 
 groundFriction = 1
 airFriction = .09

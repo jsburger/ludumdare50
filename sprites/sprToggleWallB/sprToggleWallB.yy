@@ -110,7 +110,7 @@
   },
   "parent": {
     "name": "Walls",
-    "path": "folders/Sprites/Player/Walls.yy",
+    "path": "folders/Sprites/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprToggleWallB",

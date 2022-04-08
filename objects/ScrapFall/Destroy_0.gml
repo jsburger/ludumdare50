@@ -1,6 +1,6 @@
 /// @description Increment scrap
 
-global.scrapCollected += 1
+global.scrapCollected += value
 instance_create_layer(x, y, "Instances", Glint).depth -= 10
 
 if comedy {

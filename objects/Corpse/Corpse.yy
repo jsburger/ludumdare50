@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Corpses",
+    "path": "folders/Objects/Pickups/Corpses.yy",
   },
   "resourceVersion": "1.0",
   "name": "Corpse",

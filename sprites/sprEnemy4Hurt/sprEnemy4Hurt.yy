@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 5,
-  "bbox_right": 59,
-  "bbox_top": 0,
-  "bbox_bottom": 56,
+  "bbox_left": 19,
+  "bbox_right": 71,
+  "bbox_top": 37,
+  "bbox_bottom": 80,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 64,
-  "height": 64,
+  "width": 96,
+  "height": 96,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,15 +24,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7b4e08dc-5d8b-4824-a837-0f1b6d978ce4","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7b4e08dc-5d8b-4824-a837-0f1b6d978ce4","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":{"name":"aff54780-505f-49a8-b7d0-063058cfeac5","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"7b4e08dc-5d8b-4824-a837-0f1b6d978ce4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"c4c498af-752f-44ee-a68d-8a45fcb0e96b","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"c4c498af-752f-44ee-a68d-8a45fcb0e96b","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":{"name":"aff54780-505f-49a8-b7d0-063058cfeac5","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"c4c498af-752f-44ee-a68d-8a45fcb0e96b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"d3dcd3f5-1540-4bde-a140-8322a4d068a4","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d3dcd3f5-1540-4bde-a140-8322a4d068a4","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":{"name":"aff54780-505f-49a8-b7d0-063058cfeac5","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"d3dcd3f5-1540-4bde-a140-8322a4d068a4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c1a19f40-f21e-4e21-beb7-ce371c6cfb0b","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c1a19f40-f21e-4e21-beb7-ce371c6cfb0b","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":{"name":"9d57b3de-71b1-4128-8e03-ca9a87064191","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"c1a19f40-f21e-4e21-beb7-ce371c6cfb0b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5dd679e8-5156-4785-bca5-5ca051a3feef","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5dd679e8-5156-4785-bca5-5ca051a3feef","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":{"name":"9d57b3de-71b1-4128-8e03-ca9a87064191","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"5dd679e8-5156-4785-bca5-5ca051a3feef","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"fdf6ac5c-f79e-42e1-84d8-c6d8ff58160d","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"fdf6ac5c-f79e-42e1-84d8-c6d8ff58160d","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"LayerId":{"name":"9d57b3de-71b1-4128-8e03-ca9a87064191","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","name":"fdf6ac5c-f79e-42e1-84d8-c6d8ff58160d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},
@@ -47,9 +47,9 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c0d2ae7e-db86-4b1e-b754-1a0be6b4ca7f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b4e08dc-5d8b-4824-a837-0f1b6d978ce4","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"e30ce31d-d9c9-44a3-b89e-3d1685c1e165","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c4c498af-752f-44ee-a68d-8a45fcb0e96b","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9b4a446c-cb11-481e-9b7a-8c65f4a9f265","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3dcd3f5-1540-4bde-a140-8322a4d068a4","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b71224d4-f102-4c6f-92d1-9ce78a37bd02","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c1a19f40-f21e-4e21-beb7-ce371c6cfb0b","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"95e77db4-1dc1-4483-81fd-0626c7db3d72","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5dd679e8-5156-4785-bca5-5ca051a3feef","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"60b36226-5143-410b-8b46-37f6b175cad0","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fdf6ac5c-f79e-42e1-84d8-c6d8ff58160d","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -62,8 +62,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 32,
-    "yorigin": 42,
+    "xorigin": 48,
+    "yorigin": 68,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sprEnemy4Hurt","path":"sprites/sprEnemy4Hurt/sprEnemy4Hurt.yy",},
@@ -73,7 +73,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"aff54780-505f-49a8-b7d0-063058cfeac5","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9d57b3de-71b1-4128-8e03-ca9a87064191","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": {
     "left": 0,
